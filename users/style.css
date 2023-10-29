@@ -1,0 +1,47 @@
+@import './../style.css';
+
+.user {
+  background-color: rgba(0, 0, 0, 0.041);
+}
+
+.user:not(:first-child) {
+  margin-top: 40px;
+}
+
+.user__wrapper {
+  display: flex;
+}
+
+.user__img {
+  width: 180px;
+  min-height: 180px;
+  background-color: black;
+}
+
+.user__img img {
+  width: 100%;
+  transform: translateX(-10px) translateY(-10px);
+}
+
+.user__info {
+  padding: 30px;
+}
+
+.user__fullname {
+  font-size: 28px;
+}
+
+.user__email {
+  margin-top: 50px;
+}
+
+.button {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users__wrapper {
+  padding: 50px 0;
+}

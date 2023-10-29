@@ -1,0 +1,38 @@
+@import './../style.css';
+
+.form {
+  padding: 50px 0;
+}
+
+.form__error {
+  display: none;
+  padding: 20px;
+  background: rgb(133, 1, 1);
+  color: #fff;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#registrationForm,
+.form__input {
+  width: 100%;
+  max-width: 320px;
+}
+
+.form__input {
+  padding: 8px 3px;
+  border: none;
+  border-bottom: 2px #000 solid;
+  background: #00000004;
+  margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+}

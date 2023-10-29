@@ -1,0 +1,9 @@
+@import "./../style.css";
+
+.square {
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+}

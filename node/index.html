@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__element"><a href="./../form/index.html">Форма</a></div>
+                <div class="menu__element"><a href="./../slider/index.html">Слайдер</a></div>
+                <div class="menu__element"><a href="./../animations/index.html">Анимации</a></div>
+                <div class="menu__element"><a href="./../randomSquares/index.html">Квадраты</a></div>
+                <div class="menu__element"><a href="./../users/index.html">Вывод пользователей</a></div>
+                <div class="menu__element"><a href="./../debounce/index.html">Дебаунс</a></div>
+                <div class="menu__element"><a href="./../video/index.html">Видео</a></div>
+                <div class="menu__element"><a href="#">Nodejs</a></div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <pre><code>
+const fs = require('fs')
+const os = require('os');
+
+fs.readFile('input.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Ошибка чтения файла: ', err)
+    return
+  }
+
+  const reversedString = data.split('').reverse().join('')
+
+  fs.writeFile('output.txt', reversedString, 'utf8', (err) => {
+    if (err) {
+      console.error('Ошибка записи файла: ', err)
+      return
+    }
+    console.log('Строка перевернута и записана в файл output.txt.')
+  })
+})
+
+const homeDirectory = os.homedir();
+
+const platform = os.platform();
+
+console.log("")
+console.log('Домашняя директория:', homeDirectory);
+console.log('Тип операционной системы:', platform);
+
+        </code></pre>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>

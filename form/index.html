@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__element"><a href="#">Форма</a></div>
+                <div class="menu__element"><a href="./../slider/index.html">Слайдер</a></div>
+                <div class="menu__element"><a href="./../animations/index.html">Анимации</a></div>
+                <div class="menu__element"><a href="./../randomSquares/index.html">Квадраты</a></div>
+                <div class="menu__element"><a href="./../users/index.html">Вывод пользователей</a></div>
+                <div class="menu__element"><a href="./../debounce/index.html">Дебаунс</a></div>
+                <div class="menu__element"><a href="./../video/index.html">Видео</a></div>
+                <div class="menu__element"><a href="./../node/index.html">Nodejs</a></div>
+            </nav>
+        </div>
+    </header>
+    <section class="form">
+        <div class="container">
+            <div class="form__wrapper">
+                <form id="registrationForm">
+                    <input class="form__input" type="text" id="name" name="name" required placeholder="Имя">
+
+                    <input class="form__input" type="text" id="phone" name="phone" required placeholder="Телефон">
+
+                    <input class="form__input" type="password" id="password" name="password" required
+                        placeholder="Пароль">
+
+                    <input class="form__input" type="password" id="confirmPassword" name="confirmPassword" required
+                        placeholder="Повторите пароль">
+
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+
+            </div>
+            <div id="error-message" class="form__error">Ошибка валидации.</div>
+        </div>
+    </section>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

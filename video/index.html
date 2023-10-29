@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Video</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__element"><a href="./../form/index.html">Форма</a></div>
+                <div class="menu__element"><a href="./../slider/index.html">Слайдер</a></div>
+                <div class="menu__element"><a href="./../animations/index.html">Анимации</a></div>
+                <div class="menu__element"><a href="./../randomSquares/index.html">Квадраты</a></div>
+                <div class="menu__element"><a href="./../users/index.html">Вывод пользователей</a></div>
+                <div class="menu__element"><a href="./../debounce/index.html">Дебаунс</a></div>
+                <div class="menu__element"><a href="#">Видео</a></div>
+                <div class="menu__element"><a href="./../node/index.html">Nodejs</a></div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="video">
+            <video width="400" height="300" controls="false" class="video__player" preload="metadata">
+                <source src="./video.mp4" type='video/mp4;'>
+                <source src="./video.webm" type='video/webm;'>
+            </video>
+            <p id="currentTime">00:00:000</p>
+        </div>
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
